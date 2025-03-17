@@ -87,7 +87,7 @@ In this section, we will demonstrate the use of `DAGAST` on the [SeqFISH dataset
         figsize=(5, 5), title=None, pointsize=5, 
         savename=f"{save_folder_cluster}/spatial_sel_cell.png"
     )
-![1](./figs/SeqFish/1.png)
+![1](./figs/SeqFISH/1.png)
 
 ### 4.Build DAGAST, train DAGAST
 #### 4.1 train_stage1
@@ -122,7 +122,7 @@ In this section, we will demonstrate the use of `DAGAST` on the [SeqFISH dataset
     ax = sc.pl.embedding(st_data_use, basis="spatial", color="emb_cluster",size=15, s=10, show=False, title='clustering')
     plt.axis('off')
     plt.savefig(f"{save_folder_cluster}/2.spatial_cluster_stage1.pdf", dpi=600, bbox_inches='tight')
-![2](./figs/SeqFish/2.png)
+![2](./figs/SeqFISH/2.png)
 
 #### 4.3 train_stage2
     save_folder_trajectory = f"{save_folder}/3.spatial_trajectory/"
@@ -156,7 +156,7 @@ In this section, we will demonstrate the use of `DAGAST` on the [SeqFISH dataset
         value=st_data_use.obs['ptime'], title="ptime", pointsize=5,
         savename=f"{save_folder_trajectory}/2.spatial_Pseudotime.pdf"
     )
-![3](./figs/SeqFish/3.png)
+![3](./figs/SeqFISH/3.png)
 
 #### 5.3 UMAP of features
     model.eval()
@@ -173,7 +173,7 @@ In this section, we will demonstrate the use of `DAGAST` on the [SeqFISH dataset
     ax = sc.pl.umap(adata, color="ptime", color_map='Spectral_r')
     plt.savefig(f"{save_folder_trajectory}/3.umap_ptime.pdf")
 
-![4](./figs/SeqFish/4.png)
+![4](./figs/SeqFISH/4.png)
 
 ---
 
