@@ -3,7 +3,7 @@
 
 **DAGAST** is an interpretable deep learning model that is specifically designed to identify patterns of continuous changes in cell states in spatial transcriptomes, such as developmental differentiation trajectories. It can also infer **functional genesets** and **functional spatial domains** that are closely related to the change process, thereby providing new ideas for understanding the mechanism of cell state changes in tissue space.
 
-<p align = "center"><img src="./Tutorial/figs/overview.png" width="500" /></p>
+<p align = "center"><img src="./Tutorial/figs/figure1.png" width="500" /></p>
 
 ---
 
